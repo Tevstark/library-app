@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 2rem;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+:modal {
+  background-color: rgb(201, 218, 250);
+  padding: 1rem;
+  margin: 1rem;
+  justify-self: center;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+:modal form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+header {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* #dialog {
+    background-color: burlywood;
+    padding: 1.5rem;
+    margin: 1rem;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    
+} */
+
+#book-details-form input {
+  border: none;
+  border-bottom: 3px black solid;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.form-submit {
+  margin: 1rem;
+  padding: 0.5rem;
+  color: black;
+  border-radius: 0.5rem;
+}
+
+#book-card-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+
+button {
+  border-radius: 1rem;
+  background-color: blanchedalmond;
+  padding: 0.7rem;
+}
